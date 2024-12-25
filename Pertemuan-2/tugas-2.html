@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran CPNS</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran CPNS</h1>
+    
+    <p>Selamat datang di halaman pendaftaran Calon Pegawai Negeri Sipil (CPNS). Silakan lengkapi formulir di bawah ini untuk mendaftar.</p>
+
+    <h2>Persyaratan Pendaftaran</h2>
+    <ol>
+        <li>Warga Negara Indonesia</li>
+        <li>Usia maksimal 35 tahun</li>
+        <li>Tidak pernah terlibat tindak pidana</li>
+        <li>Memiliki pendidikan sesuai dengan posisi yang dilamar</li>
+    </ol>
+
+    <h2>Posisi yang Tersedia</h2>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Posisi</th>
+            <th>Kualifikasi Pendidikan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Analis Keuangan</td>
+            <td>S1 Ekonomi/Manajemen</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Teknisi IT</td>
+            <td>S1 Informatika</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Guru Sekolah Dasar</td>
+            <td>S1 PGSD</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- Formulir Pendaftaran -->
+    <h2 style="text-align: center;">Formulir Pendaftaran</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <form action="/submit-pendaftaran" method="post" style="border: 1px solid black; padding: 50px;">
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="nik">NIK (Nomor Induk Kependudukan):</label><br>
+            <input type="text" id="nik" name="nik" required><br><br>
+
+            <label for="tanggal-lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir" required><br><br>
+
+            <label for="posisi">Posisi yang Dilamar:</label><br>
+            <select id="posisi" name="posisi">
+                <option value="analis-keuangan">Analis Keuangan</option>
+                <option value="teknisi-it">Teknisi IT</option>
+                <option value="guru-sd">Guru Sekolah Dasar</option>
+            </select><br><br>
+
+            <label for="pendidikan">Pendidikan Terakhir:</label><br>
+            <input type="text" id="pendidikan" name="pendidikan" required><br><br>
+
+            <label for="alamat">Alamat Lengkap:</label><br>
+            <textarea id="alamat" name="alamat" cols="30" rows="10" required></textarea><br><br>
+
+            <label>Jenis Kelamin:</label><br>
+            <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-laki" required>
+            <label for="laki-laki">Laki-laki</label><br>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label><br>
+            <div style="padding-top: 15px; text-align: center;">
+                <input type="submit" value="Daftar">
+            </div>
+        </form>
+    </div>
+
+</body>
+//Asfita Saldarisya Nadjun//
+</html>
